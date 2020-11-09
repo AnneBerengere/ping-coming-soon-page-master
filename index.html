@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -16,19 +18,52 @@
 </head>
 <body>
 
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
+<section class="container">
+  <div class="logo">
+    <img src="images/logo.svg"/>
+  </div>
+  <div class="content">
+    <div class="title">
+      We are launching&nbsp<span class="soon">soon!</span>
+    </div>
+    <div class="text">
+      Subscribe and get notified
+    </div>
+  </div>
+  <div class="container_email">
+    <div class="emailformulaire">
+      <input type="text" placeholder="Your email address..." class="inputinvalid none" id="inputemail">
+      <div class="text_error emailvalid" id="texterror">
+        Please provide a valid email address
+      </div>
+    </div>
+    <div class="button_notify" id="buttonnotify">Notify Me</div>
+  </div>
+  <div class="site_preview">
+    <img src="images/illustration-dashboard.png">
+  </div>
+  <div class="network_logo">
+    <div class="circleicon">
+      <img src="images/facebook.svg" class="icon icon-facebook">
+    </div>
+    <div class="circleicon">
+      <img src="images/twitter.svg" class="icon icon-twitter">
+    </div>
+    <div class="circleicon">
+      <img src="images/instagram.svg" class="icon icon-instagram">
+    </div>
+  </div>
+  <div class="copyright_text">
+    &copy; Copyright Ping. All rights reserved.
+  </div>
+</section>
 
   <footer>
     <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Anne-Bérengère Gesset</a>.
     </p>
   </footer>
+<script src="app.js"></script>
 </body>
 </html>
